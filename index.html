@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+   <header>
+        <div class="main  p-4 my-5 d-flex">
+            
+            <h1  class="p-2 justfiy-content-center m-auto  " >Bookmarker</h1>
+        </div>
+   </header>
+   
+   <section  >
+       
+        <div class="container  ">
+            <hr>
+            <h3  class="p-2 mb-4 text-center"> <i class="fa-solid fa-bookmark"></i>  Bookmark your favourite sites    <i class="fa-solid fa-bookmark"></i></i></h3>
+
+            <div class="form-groub  py-3">
+
+                <div  class="site-name  mb-4"  id="siteNameContainer">
+                    
+                    <label for="siteNameInput" >  <i class="fa-solid fa-book-bookmark pe-2"></i>  Site name  </label>
+                    <input type="text"  class="form-control  mt-2"  placeholder="Bookmark Name" id="siteNameInput"  >
+                    
+                    <div id="validationMessage" class="invalid-feedback">
+                        
+                    </div>
+
+                </div>
+
+                <div  class="site-url  mb-4">
+                    
+                    <label for="siteUrlInput">  <i class="fa-solid fa-link"></i>  Site URL  </label>
+                    <input type="url"  class="form-control   mt-2"  placeholder="Website URL" id="siteUrlInput">
+                    
+                    <div id="invalidUrl" class="invalid-feedback">
+                        
+                    </div>
+                  
+                </div>
+
+                <div class="row    " >
+
+                 
+                    <div class="col-md-4  r p-2 ">
+
+                    </div>
+
+                   <div class="col-md-4  p-2  ms-5  ps-5 ">
+
+                    <button class="btn  btn-submit justfiy-content-center px-5 " id="submitBtn">  Submit </button>
+                   </div>
+
+                   <div class="col-md-4 p-2 ">
+
+                   </div>
+
+                </div>
+               
+                
+                <hr>
+
+            </div>
+
+            <div class="modal modal-sm   "  id="modal"   tabindex="-1">
+                    
+                <div class="modal-dialog">
+                  
+                    <div class="modal-content">
+                        
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title">Modal title</h5> -->
+                            <p id="modalMessage" ></p>
+                            <button type="button"  id="btnClose" class="btn-close  close"   data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                       
+                      
+                        
+                        <div class="modal-footer  fs-6">
+                               
+                            <button type="button" class="btn btn-success close "  data-bs-dismiss="modal"  id="btnClose">OK</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   </section>
+
+   <section  class="display  p-3  pb-5  mb-4">
+
+
+        <div class="container ">
+
+            <table class="table  table-striped ">
+
+                <thead class="text-center" >
+                    <th>index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>delete</th>
+
+                </thead>
+
+                <tbody id="tableBody"  class="text-center">
+
+                </tbody>
+            </table>
+        </div>
+   </section>
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
